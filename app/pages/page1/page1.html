@@ -1,0 +1,23 @@
+<ion-navbar *navbar>
+  <ion-title>Tab 1</ion-title>
+</ion-navbar>
+
+<ion-content padding class="page1">
+  <ion-list> 
+  <ion-item> 
+  <ion-label>Duration</ion-label> 
+  		<ion-input type="number" [(ngModel)]="data.duration"></ion-input> 
+  </ion-item> 
+  <ion-item> 
+  	<ion-label>Interval(min)</ion-label> 			
+  	<ion-input type="number" [(ngModel)]="data.min"></ion-input> 
+  	</ion-item>
+  	 <ion-item> 
+  	<ion-label>Interval(max)</ion-label> 			
+  	<ion-input type="number" [(ngModel)]="data.max"></ion-input> 
+  	</ion-item>
+  </ion-list> 
+  <div padding> 
+  	<button block (click)='start()'>Start</button>
+  </div>
+</ion-content>
