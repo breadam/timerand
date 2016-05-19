@@ -3,7 +3,7 @@
 
 node_modules/
 www/build/
-platforms/
+#platforms/
 plugins/
 *.swp
 .DS_Store
